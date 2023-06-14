@@ -1,6 +1,6 @@
 const {Router, response} = require ("express")
 const portRouter = Router ();
-const {getPortDetailsById} = require ("./controller");
+const {getPortDetailsById} = require ("./portscontroller");
 portRouter.get("/:id", async (req, res) =>{
     try {
         const portId = parseInt(req.params.id);
